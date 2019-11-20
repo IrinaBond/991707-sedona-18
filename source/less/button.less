@@ -1,0 +1,19 @@
+.button {
+display: inline-block;
+vertical-align: middle;
+text-align: center;
+width: 100%;
+padding-top: 20px;
+padding-bottom: 20px;
+
+color: @tx-white;
+background-color: @bg-lightblue;
+  &:hover,
+  &:focus {
+    background-color: @bg-midblue;
+  }
+  &:active {
+    background-color: @bg-darkblue;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
