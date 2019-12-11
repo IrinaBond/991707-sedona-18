@@ -1,5 +1,5 @@
 .services__list {
-  padding-left: 50px;
+  padding-left: 70px;
   padding-right: 20px;
   list-style: none;
   background-color: @bg-white;
@@ -12,7 +12,7 @@
 
 .services__title {
   .offset();
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -21,6 +21,50 @@
 
 .services__description {
   .offset();
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   color: @tx-darkgrey;
+}
+
+.services__description br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .services__list {
+    .offset();
+    padding-top: 120px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .services__item {
+    margin: 0 5%;
+    width: 33.3%;
+    text-align: center;
+
+    &--house {
+      order: 0;
+    }
+
+    &--souvenir {
+      order: 2;
+    }
+
+    &--food {
+      order: 1;
+    }
+  }
+
+  .services__title {
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+
+  .services__description {
+    margin-bottom: 60px;
+  }
+
+  .services__description br {
+    display: block;
+  }
 }

@@ -9,7 +9,9 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -25,47 +27,68 @@
               <a class="button" href="#">HTML Academy</a>
             </li>
           </ul>
+          <a class="main-nav__logo">
+            <img src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+          </a>
         </div>
       </nav>
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
-      </a>
+      <div class="page-header__welcome page-header__welcome--inner-page"></div>
     </header>
     <main>
       <h1 class="inner-page__title">Фото и видео </h1>
       <section class="gallery">
         <h2 class="visually-hidden">Фото</h2>
-        <p class="gallery__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="gallery__intro">Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.</p>
         <ul class="gallery__list photo__list">
           <li class="photo__item">
             <figure class="photo__figure">
-              <a class="photo__link" href="#"><img class="photo__image" src="../img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы"></a>
-              <p class="photo__name">Неродные просторы</p>
-              <figcaption class="photo__figurecaption">Автор фото: Борис</figcaption>
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 1125px)" srcset="../img/photo-sunset-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/photo-sunset-tablet@1x.jpg">
+                  <img class="photo__image" src="../img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+                </picture>
+              </a>
+              <figcaption class="photo__figurecaption"><span class="photo__name">Неродные просторы</span><br>Автор фото: Борис</figcaption>
               <p class="photo__like">1350</p>
             </figure>
           </li>
           <li class="photo__item">
             <figure class="photo__figure">
-              <a class="photo__link" href="#"><img class="photo__image" src="../img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность"></a>
-              <p class="photo__name">Местная растительность</p>
-              <figcaption class="photo__figurecaption">Автор фото: Сергей</figcaption>
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 1125px)" srcset="../img/photo-cactus-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/photo-cactus-tablet@1x.jpg">
+                  <img class="photo__image" src="../img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+                </picture>
+              </a>
+              <figcaption class="photo__figurecaption"><span class="photo__name">Местная растительность</span><br>Автор фото: Сергей</figcaption>
               <p class="photo__like">143</p>
             </figure>
           </li>
           <li class="photo__item">
             <figure class="photo__figure">
-              <a class="photo__link" href="#"><img class="photo__image" src="../img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север"></a>
-              <p class="photo__name">Дорога на север</p>
-              <figcaption class="photo__figurecaption">Автор фото: Петр</figcaption>
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 1125px)" srcset="../img/photo-roads-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/photo-roads-tablet@1x.jpg">
+                  <img class="photo__image" src="../img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+                </picture>
+              </a>
+              <figcaption class="photo__figurecaption"><span class="photo__name">Дорога на север</span><br>Автор фото: Петр</figcaption>
               <p class="photo__like">96</p>
             </figure>
           </li>
           <li class="photo__item">
             <figure class="photo__figure">
-              <a class="photo__link" href="#"><img class="photo__image" src="../img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола"></a>
-              <p class="photo__name">Мост Дьявола</p>
-              <figcaption class="photo__figurecaption">Автор фото: Антон</figcaption>
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 1125px)" srcset="../img/photo-bridge-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="../img/photo-bridge-tablet@1x.jpg">
+                  <img class="photo__image" src="../img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола">
+                </picture>
+              </a>
+              <figcaption class="photo__figurecaption"><span class="photo__name">Мост Дьявола</span><br>Автор фото: Антон</figcaption>
               <p class="photo__like">254</p>
             </figure>
           </li>
