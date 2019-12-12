@@ -1,17 +1,22 @@
 .social__list {
+  .offset();
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
+  margin-left: -6px;
+  margin-top: -6px;
+  width: 165px;
 }
 
 .social__link {
-  display: block;
-  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 48px;
+  height: 48px;
   background-color: @bg-lightblue;
-
-  &--facebook {
-    padding: 13px 18px;
-  }
 }
 
 .social__link path {

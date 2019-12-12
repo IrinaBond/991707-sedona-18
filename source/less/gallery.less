@@ -1,5 +1,5 @@
 .gallery {
-  padding: 0 20px;
+  margin: 0 20px;
   margin-bottom: 40px;
 }
 
@@ -7,4 +7,39 @@
   .offset();
   line-height: 26px;
   margin-bottom: 30px;
+
+  & br {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    margin: 0 60px;
+    margin-bottom: 70px;
+  }
+
+  .gallery__intro {
+    .offset();
+    width: 70%;
+    margin: 0 auto;
+    line-height: 26px;
+    margin-bottom: 65px;
+
+    & br {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery {
+    .offset();
+    margin-bottom: 70px;
+  }
+
+  .gallery__intro {
+    width: 50%;
+    margin-bottom: 70px;
+  }
 }

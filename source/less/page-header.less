@@ -1,10 +1,60 @@
 .page-header {
   width: 100%;
-  text-align: center;
 }
 
-.page-header__logo {
-  display: inline-block;
-  width: 102px;
-  height: 83px;
+.page-header__welcome {
+  margin-top: -27px;
+  margin-bottom: 40px;
+  height: 390px;
+  background:
+    url("../img/text-sedona-index.svg") center/280px no-repeat,
+    url("../img/bg-intro-triangle-mobile.svg") bottom/contain no-repeat,
+    url("../img/bg-back-mobile@1x.jpg") bottom/cover no-repeat;
+
+  &--inner-page {
+    height: 160px;
+    background:
+      url("../img/text-sedona.svg") center/280px no-repeat,
+      url("../img/bg-intro-triangle-mobile.svg") bottom/contain no-repeat,
+      url("../img/bg-back-mobile@1x.jpg") bottom/cover no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__welcome {
+    margin-top: 0;
+    margin-bottom: 50px;
+    height: 520px;
+    background:
+      url("../img/text-sedona-index.svg") top 77px center/460px no-repeat,
+      url("../img/bg-intro-triangle-tablet.svg") bottom/contain no-repeat,
+      url("../img/bg-back-tablet@1x.jpg") bottom/cover no-repeat;
+
+    &--inner-page {
+      margin-bottom: 75px;
+      height: 290px;
+      background:
+        url("../img/text-sedona.svg") top 95px center/460px no-repeat,
+        url("../img/bg-intro-triangle-tablet.svg") bottom/contain no-repeat,
+        url("../img/bg-back-tablet@1x.jpg") bottom/cover no-repeat;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__welcome {
+    background:
+      url("../img/text-sedona-index.svg") top 77px center/460px no-repeat,
+      url("../img/bg-intro-triangle-desktop.svg") bottom/contain no-repeat,
+      url("../img/bg-back-desktop@1x.jpg") bottom/cover no-repeat;
+
+    &--inner-page {
+      margin-bottom: 110px;
+      height: 300px;
+      background:
+        url("../img/text-sedona.svg") top 100px center/460px no-repeat,
+        url("../img/bg-intro-triangle-desktop.svg") bottom/contain no-repeat,
+        url("../img/bg-back-desktop@1x.jpg") bottom/cover no-repeat;
+    }
+  }
 }
