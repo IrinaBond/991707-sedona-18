@@ -17,8 +17,21 @@
   width: 48px;
   height: 48px;
   background-color: @bg-lightblue;
+
+  &:hover,
+  &:focus {
+    background-color: @bg-midblue;
+  }
+
+  &:active {
+    background-color: @bg-darkblue;
+  }
+
+  &:active .social__icon {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
-.social__link path {
+.social__icon {
   fill: @tx-white;
 }

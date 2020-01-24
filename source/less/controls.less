@@ -1,0 +1,116 @@
+.controls__progress-bar {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  height: 45px;
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    width: 235px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 58px;
+    width: 9px;
+    background-color: @bg-white;
+    height: 9px;
+    border-radius: 50%;
+  }
+}
+
+.controls__list {
+  display: flex;
+  .offset();
+  width: 100%;
+  list-style: none;
+}
+
+.controls__item {
+  margin: 2px;
+
+  &:nth-child(2) {
+    margin-left: auto;
+  }
+}
+
+.controls__button {
+  width: 60px;
+  height: 58px;
+  border: none;
+  fill: #5c6870;
+
+  &--subtitles {
+    width: 47px;
+  }
+
+  &:hover .controls-icon,
+  &:focus .controls-icon {
+    fill: #333333;
+  }
+
+  &:active .controls-icon {
+    fill: rgba(51, 51, 51, 0.3);
+  }
+}
+
+.controls-icon {
+  fill: #5c6870;
+}
+
+@media (min-width: @tablet-width) {
+  .controls__progress-bar {
+    height: 91px;
+    width: 430px;
+    top: 0;
+    left: 80px;
+    background-color: transparent;
+
+    &::before {
+      top: 50%;
+      left: 14px;
+      width: 390px;
+    }
+
+    &::after {
+      top: 43px;
+      left: 126px;
+    }
+  }
+
+  .controls__button {
+    background-color: transparent;
+
+    &:hover .controls-icon,
+    &:focus .controls-icon {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active .controls-icon {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .controls-icon {
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .controls__progress-bar {
+    width: 570px;
+
+    &::before {
+      width: 540px;
+    }
+  }
+}

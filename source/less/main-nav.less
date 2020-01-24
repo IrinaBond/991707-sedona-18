@@ -33,8 +33,13 @@
   width: 61px;
   height: 55px;
   border: none;
+  outline: none;
   cursor: pointer;
   background-color: @bg-white;
+
+  &:focus {
+    outline: auto;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -71,6 +76,7 @@
   }
 
   .main-nav--nojs .main-nav__toggle {
+    background-color: @bg-lightblue;
     display: none;
   }
 }
@@ -92,5 +98,17 @@
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__logo {
+    width: 188px;
+    height: 96px;
+  }
+
+  .main-nav__logo img {
+    width: 188px;
+    height: 96px;
   }
 }

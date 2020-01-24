@@ -63,15 +63,45 @@ input[type="radio"].visually-hidden {
 
 .inner-page__title {
   .offset();
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 26px;
+  color: @tx-black;
 }
 
 .wrapper {
   margin: 0 auto;
   background-color: @bg-white;
   box-shadow: 0 -5px 9px 2px #dbdbdb;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  min-width: 280px;
+  max-width: 480px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @tx-white;
+  border: none;
+  background-color: @bg-lightblue;
+
+  &:hover,
+  &:focus {
+    background-color: @bg-midblue;
+  }
+
+  &:active {
+    background-color: @bg-darkblue;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 

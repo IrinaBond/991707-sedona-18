@@ -2,8 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 5px;
 }
 
 .copyright__link {
   margin-left: 10px;
+
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: @tx-lightblue;
+  }
+
+  &:focus .copyright__icon {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    justify-content: flex-end;
+  }
 }

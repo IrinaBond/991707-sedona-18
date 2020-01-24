@@ -1,12 +1,13 @@
 .services__list {
-  padding-left: 70px;
-  padding-right: 20px;
+  .offset();
   list-style: none;
   background-color: @bg-white;
 }
 
 .services__item {
   .offset();
+  padding-left: 70px;
+  padding-right: 20px;
   text-align: left;
 }
 
@@ -31,14 +32,14 @@
 
 @media (min-width: @tablet-width) {
   .services__list {
-    .offset();
-    padding-top: 120px;
     display: flex;
     flex-direction: row;
   }
 
   .services__item {
-    margin: 0 5%;
+    .offset();
+    padding-top: 120px;
+    margin: 0 45px;
     width: 33.3%;
     text-align: center;
 
@@ -66,5 +67,15 @@
 
   .services__description br {
     display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services__item {
+    margin: 0 50px;
+  }
+
+  .services__description {
+    margin-bottom: 80px;
   }
 }
