@@ -6,8 +6,14 @@
 }
 
 .photo__item {
+  padding: 20px;
   font-size: 14px;
   line-height: 24px;
+  border-bottom: 1px solid @ln-lightgrey;
+
+  &:nth-child(1) {
+    border-top: 1px solid @ln-lightgrey;
+  }
 }
 
 .photo__figure {
@@ -15,14 +21,15 @@
   flex-direction: column;
   align-items: flex-start;
   .offset();
-  margin-bottom: 20px;
   text-align: left;
 }
 
 .photo__link {
+  .offset();
   align-self: center;
   width: 280px;
   height: 280px;
+  margin-bottom: 14px;
 }
 
 .photo__name {
@@ -34,6 +41,7 @@
 .photo__figurecaption {
   .offset();
   text-transform: none;
+  color: @tx-black;
 }
 
 .photo__like {
@@ -41,6 +49,7 @@
   margin-top: 10px;
   padding-left: 35px;
   font-weight: 700;
+  color: @tx-black;
 }
 
 @media (min-width: @tablet-width) {
@@ -50,8 +59,10 @@
   }
 
   .photo__item {
+    .offset();
     width: 50%;
     background-color: @bg-grey;
+    border: none;
 
     &:nth-child(1) {
       width: 100%;
@@ -81,12 +92,15 @@
   .photo__figurecaption {
     width: 100%;
     padding: 16px 20px;
+    padding-top: 2px;
   }
 
   .photo__like {
     position: absolute;
-    bottom: 25px;
-    right: 20px;
+    width: 90px;
+    bottom: 28px;
+    right: 0;
+    margin-top: 0;
   }
 }
 
@@ -100,7 +114,8 @@
   }
 
   .photo__figurecaption {
-    margin-top: -80px;
+    margin-top: -94px;
+    padding-top: 15px;
     background-color: rgba(0, 0, 0, 0.3);
     color: @tx-white;
   }

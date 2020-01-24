@@ -1,5 +1,7 @@
 .presentation {
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .presentation__title {
@@ -9,12 +11,19 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  color: @tx-black;
 }
 
 .presentation__intro {
   display: block;
   .offset();
+  width: 245px;
   margin-bottom: 35px;
+  line-height: 24px;
+}
+
+.presentation__video {
+  margin-bottom: 75px;
 }
 
 @media (min-width: @tablet-width) {
@@ -23,14 +32,18 @@
   }
 
   .presentation__intro {
-    width: 55%;
+    width: 430px;
     margin: 0 auto;
+    margin-bottom: 75px;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .presentation__intro {
-    width: 35%;
-    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+  .presentation__video {
+    margin-bottom: 120px;
   }
 }
