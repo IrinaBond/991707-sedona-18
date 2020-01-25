@@ -5,9 +5,11 @@
 }
 
 .services__item {
+  position: relative;
   .offset();
   padding-left: 70px;
   padding-right: 20px;
+  padding-top: 20px;
   text-align: left;
 }
 
@@ -20,9 +22,20 @@
   color: @tx-black;
 }
 
+.services__icon {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  fill: #a1c6dd;
+
+  &--souvenir {
+    left: 25px;
+  }
+}
+
 .services__description {
   .offset();
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: @tx-darkgrey;
 }
 
@@ -38,7 +51,7 @@
 
   .services__item {
     .offset();
-    padding-top: 120px;
+    padding-top: 140px;
     margin: 0 45px;
     width: 33.3%;
     text-align: center;
@@ -61,6 +74,30 @@
     font-size: 21px;
   }
 
+  .services__icon {
+    top: 40px;
+    left: 50%;
+
+    &--house {
+      width: 75px;
+      height: 72px;
+      margin-left: -37px;
+    }
+
+    &--food {
+      top: 45px;
+      width: 77px;
+      height: 68px;
+      margin-left: -38px;
+    }
+
+    &--souvenir {
+      width: 64px;
+      height: 75px;
+      margin-left: -32px;
+    }
+  }
+
   .services__description {
     margin-bottom: 60px;
   }
@@ -72,7 +109,23 @@
 
 @media (min-width: @desktop-width) {
   .services__item {
+    padding-top: 120px;
     margin: 0 50px;
+  }
+
+  .services__icon {
+    top: 20px;
+
+    &--food {
+      top: 25px;
+    }
+  }
+
+  .reasons__description {
+    &--bridge {
+      max-width: 220px;
+      margin: 0 auto;
+    }
   }
 
   .services__description {
