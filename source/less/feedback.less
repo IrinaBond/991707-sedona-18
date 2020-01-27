@@ -183,16 +183,19 @@
 .feedback__input--radio + .feedback__label:hover::before,
 .feedback__input--radio + .feedback__label:focus::before,
 .feedback__input--checkbox + .feedback__label:hover::before,
-.feedback__input--checkbox + .feedback__label:focus::before {
+.feedback__input--checkbox + .feedback__label:focus::before,
+input[type="checkbox"].visually-hidden:focus + label::before,
+input[type="radio"].visually-hidden:focus + label::before {
   background-color: @input-grey;
 }
 
 .feedback__input--radio + .feedback__label:active::before,
-.feedback__input--checkbox + .feedback__label:active::before {
+.feedback__input--checkbox + label:active::before {
   background-color: @input-midgrey;
 }
 
-.feedback__input--radio:checked + .feedback__label::after {
+.feedback__input--radio:checked + .feedback__label::after,
+input[type="radio"].visually-hidden:checked + label::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -203,7 +206,8 @@
   background-color: @input-darkgrey;
 }
 
-.feedback__input--checkbox:checked + .feedback__label::before {
+.feedback__input--checkbox:checked + .feedback__label::before,
+input[type="checkbox"].visually-hidden:checked + label::before {
   background: @input-lightgrey url("../img/icon-tick.svg") no-repeat 50% 50%;
 }
 
@@ -419,7 +423,7 @@
     }
 
     &--contacts {
-      margin-bottom: 53px;
+      margin-bottom: 33px;
     }
 
     &--sights {
@@ -472,7 +476,11 @@
     &--contacts {
       flex-wrap: nowrap;
       width: 50%;
-      margin-bottom: 0;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
     }
 
     &--sights {

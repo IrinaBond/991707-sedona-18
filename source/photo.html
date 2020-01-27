@@ -13,7 +13,7 @@
     </div>
     <div class="wrapper">
       <header class="page-header">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -34,9 +34,9 @@
             </ul>
             <a href="index.html" class="main-nav__logo">
               <picture>
-                <source media="(min-width: 1125px)" srcset="./img/logo-sedona-desktop.svg" width="188" height="96">
+                <source media="(min-width: 1125px)" srcset="./img/logo-sedona-desktop.svg">
                 <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
-                <img src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+                <img class="main-nav__logo-image" src="./img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
               </picture>
             </a>
           </div>
@@ -58,8 +58,10 @@
                     <img class="photo__image" src="./img/photo-sunset-mobile@1x.jpg" srcset="./img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
                   </picture>
                 </a>
-                <figcaption class="photo__figurecaption"><span class="photo__name">Неродные просторы</span><br>Автор фото: Борис</figcaption>
-                <p class="photo__like">1350</p>
+                <figcaption class="photo__figurecaption">
+                  <span class="photo__name">Неродные просторы</span>
+                  <span>Автор фото: Борис</span>
+                  <span class="photo__like">1350</span></figcaption>
               </figure>
             </li>
             <li class="photo__item">
@@ -71,8 +73,11 @@
                     <img class="photo__image" src="./img/photo-cactus-mobile@1x.jpg" srcset="./img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
                   </picture>
                 </a>
-                <figcaption class="photo__figurecaption"><span class="photo__name">Местная растительность</span><br>Автор фото: Сергей</figcaption>
-                <p class="photo__like">143</p>
+                <figcaption class="photo__figurecaption">
+                  <span class="photo__name">Местная растительность</span>
+                  <span>Автор фото: Сергей</span>
+                  <span class="photo__like">143</span>
+                </figcaption>
               </figure>
             </li>
             <li class="photo__item">
@@ -84,8 +89,11 @@
                     <img class="photo__image" src="./img/photo-roads-mobile@1x.jpg" srcset="./img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
                   </picture>
                 </a>
-                <figcaption class="photo__figurecaption"><span class="photo__name">Дорога на север</span><br>Автор фото: Петр</figcaption>
-                <p class="photo__like">96</p>
+                <figcaption class="photo__figurecaption">
+                  <span class="photo__name">Дорога на север</span>
+                  <span>Автор фото: Петр</span>
+                  <span class="photo__like">96</span>
+                </figcaption>
               </figure>
             </li>
             <li class="photo__item">
@@ -97,8 +105,11 @@
                     <img class="photo__image" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола">
                   </picture>
                 </a>
-                <figcaption class="photo__figurecaption"><span class="photo__name">Мост Дьявола</span><br>Автор фото: Антон</figcaption>
-                <p class="photo__like">254</p>
+                <figcaption class="photo__figurecaption">
+                  <span class="photo__name">Мост Дьявола</span>
+                  <span>Автор фото: Антон</span>
+                  <span class="photo__like">254</span>
+                </figcaption>
               </figure>
             </li>
           </ul>
