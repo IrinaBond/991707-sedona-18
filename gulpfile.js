@@ -78,7 +78,7 @@ gulp.task('scripts', function() {
 
 gulp.task("clean", function () {
   return del("build");
- });
+});
 
 gulp.task("copy", function () {
   return gulp.src([
